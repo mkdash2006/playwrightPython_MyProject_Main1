@@ -1,7 +1,13 @@
-# Download and install 'Git'
+# Download and install 'Git'   #  https://git-scm.com/install/windows
 #           git --version
-# Open Github url and login to your Github Account
-# Git Initilization - Take your Username and Email id
-# Goto Command Prompt (Connection between local Git and Github Repository.)
-    # git config --global user.name "mkdash2003"
-    # git config --global user.email "mkdash2003@gmail.com"
+# Open Github url and login to your Github Account - https://github.com/dashboard
+# Git Initilization - Remember your Username and Email id
+# Goto Command Prompt(Local) - (Connection between local Git and Github Repository.)
+    # git config --global user.name "mkdash2006"
+    # git config --global user.email "mkdash2006@gmail.com"
+# To check config details
+#   git config --global user.name
+#   git config --global user.email
+# To Remove github Account
+#   git config --global --unset user.name
+#   git config --global --unset user.email
