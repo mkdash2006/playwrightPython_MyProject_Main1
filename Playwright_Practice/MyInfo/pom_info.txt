@@ -1,0 +1,6 @@
+# 100 test case in a single file is not fesible
+# Also not good practive store in 10 files (10 each)
+
+# How to store the page data is the POM
+# Create a folder uncer the main project - "tests" 
+    # Under tests, create page files (ex- test_home.py, test_result.py, test_search.py, test_shopping_cart.py, test_category.py)

@@ -1,0 +1,44 @@
+# pytest - It is a Framework  (pytest -m markname -v -s )
+# Installations - 
+        # pip install pytest    (pip=python package) - windows
+        # pip -m install pytest    (for Mac)
+# Pytest Rules- 
+        # Project File name always start with Test_     ex- Test_filename1.py
+        # Test case always starts with Test_            ex- def Test_name():
+        # Method name always starts with Test_          ex- Test_methodname():
+# terminal to run 
+    # pytest filerelativepath.py -v   (v=Verbose mode, more detailed output) 
+    # test -v  (execute all test_ file one after another)
+# parallel mode - pip install pytest-xdist   or    pip -m install pytest-xdist
+    # pytest -v -n 3    (-n 3  means three browser/worker running same time) 
+# Marker - For selective test cases execution:- (python.mark.tagname)
+    # @pytest.mark.smoke
+    # @pytest.mark.test
+    # @pytest.mark.prod
+    # @pytest.mark.uat
+    # @pytest.skip      (to skip a test case, and no need to define in python.ini as python know this command)
+    # ORDER IN MARKER - for order in execution- first install plugin ( pip Install pytest-order )
+    # @pytest.mark.order(1)  
+    # @pytest.mark.order(2)
+    # To run mark items (python -v -n 3 -m smoke)     ### -m  means run the module with smoke
+    # pytest.ini       (create pytest.ini file under the main project, to avaid warning)
+    # Dependency - For this first install pip install pytest-dependency
+        @pytest.mark.dependency(depends=["Test_handle_alerts"])
+# pytest -s  (to get the printed output)
+# Fixture - pytest.fixture()
+#           define once and pass paramthe same parameter in each test case.
+#           insteadof function calling we can use for repeated tasks.
+#           we can use inplace of Pre condition
+#           Playwright Data Type - Page, Context, Browser, Platwright
+#           Python Data Type - int, char, flaot, str, bool, set, tuple, list, dict
+# @pytest.fixture(autouse=True, scope="function")  
+                                  # Bydefault scope="functoion" with fixture, no need to define
+                                  # autouse=True (if want to automatically call in all functions)
+                                  # Else we have to pass parameter in functions.
+    # yield - pause, return. for post conditions/After each Test or  yield 2  - means return 2
+    # autouse=True  (in this method, once defined with fixture, no need pass the parameter in all test cases)
+    # Bydefault, scope="function"  [that is the reason it automatically call the function parameter in all 3test cases)]
+    # Session - Pre/Post executed only once, not in all test cases
+# conftest.py = Global for all fixtures
+# OR install - pip install pytest-playwright (directly install inbuild pytest fixtures..ex- page, context, browser)
+

@@ -1,0 +1,17 @@
+# Install Pytest - pip install pytest
+# pytest -v - output with proper outpur
+# Assert - Python -- assert()
+# Assert - Playwright -- except(page.locator())  and expect should import in the beginning
+    # expect().to_be
+    # expect().to_have
+    # expect().to_contain
+# Parallel Mode  ->  pip install pytest-xdist  (3 workers = 3 browsers)
+# cmd/Terminal - pytest filename.py
+# pytest filname.py -v   (for details reports)
+# pytest filename.py -v -n 3 (with no of Test case)
+# pytest filename.py -v -n 3 -m (with mark)
+# pytest Order ->
+# pytest ini -> 
+# Execute with marker ->
+# Verbose Mode - -v
+# -s

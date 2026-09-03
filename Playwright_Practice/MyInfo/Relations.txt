@@ -1,0 +1,35 @@
+
+---------------------------------------------------------------
+node1 id='value2
+    node2  id="value1"
+        node5  id='hello'
+        node6
+        node6
+        node7  id='hello1'
+    node3
+        node8
+        node9
+        node5 id='hello'
+    node4
+        node12
+--------------------------------------------------------------
+######     Relations using xpath
+1. child: //node2[@id='value1']/node5[@id='hello']
+2. grandChild: //node1[@id='value2']//node7[@id=hello']
+3. parent: //node7[@id=hello']/parent::node2[@id='value1']
+4. ancestor: //node7[@id=hello']/ancestor::node1[@id='value2']
+5. preceding-sibling: //node5[@id='hello']/preceding-sibling::node6[2]
+6. following-sibling: //node7[@id='hello']/following-sibling::node6[2]
+
+######     Relations using CSS
+1. child: 
+2. grandChild: 
+3. following-sibling: 
+Relation - 
+1. child: node2[id='value1']>node5[id='hello']
+        OR node2#valu1>node5#hello
+2. grandChild: node1[id='value2'] node7[#hello]
+        OR  node1#valu2 node7#hello
+3. following-sibling: node7[id='hello']~node6
+        OR  node7#hello~node6
+-----------------------------------------------------------------------

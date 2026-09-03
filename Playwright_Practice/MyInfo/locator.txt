@@ -1,0 +1,64 @@
+# Locator - - get by Locator (page.get_by_text, _placeholder. _alttext, _label, _role)
+#           - Reletive xpath
+#           - CSS
+
+###########  XPATH  ######## 
+----------with the help of id-----------------------------------------------------------
+<input class="wikipedia-search-input" id="Wikipedia1_wikipedia-search-input" type="text">
+//tagname[]
+//tagname[@attribute='value']
+//input[@att='value']
+//input[@id='Wikipedia1_wikipedia-search-input']
+//* (means All Tag)
+//*[@id=value]
+//*[@id='Wikipedia1_wikipedia-search-input']
+----------with the help of class -------------------------------------------------
+<input class="form-control" id="email" maxlength="25" placeholder="Enter EMail" type="text">
+//input[@class='value'][index]
+//*[@class='value']
+//input[@class='form-control'][2]
+--------------with the help of text() for exact Match -----------------------------------------
+<td>Learn Selenium</td>
+//tagname[]
+//tagname[text()='value']    ------  @ is not required for text()------ equal to means Exact match
+//td[text()='Learn Selenium']
+----------------with the help of contains for partial Match -------------------------------
+            OR where exact value is not clear/or space in before and after VALUE(Partial Text)
+            Use another method insteadof text=value , use contains text(),value
+//tagname[]
+//tagname[contains(text(), 'value')]
+//td[]
+//td[contains(text(),'Learn Selenium')]
+//*[contains(text(),'Learn Selenium')]
+------------------------------------------------------------------------------------------------
+//*[@class='form-control' and @id = 'country']
+//*[@class='form-control' and @id = 'country'][5]
+page.locator("//*[@class='form-control' and @id='country'][5]").click()
+==============================================================
+
+################ CSS  Locator  ###################
+In CSS -
+    locator - 
+                in xpath    - //tagname[@attribute='value']
+                in CSS      - tagname[attribute='value']
+                    OR      - [attribute='value']
+                    OR      - #attributevalue
+                            - .classvalue
+                In CSS 
+                    - Can Use - name, id, class
+                    - Can not use - text, 
+    ID (#) - id means # (ex= tagname#xyz)
+    class (.) - class means . (ex- tagname.xyz)
+
+
+        # //*[@id='Wikipedia1_wikipedia-search-input']
+
+# 2. (//tagnme[@att='value'])[serachResultsIndex]:           (//input[@class="form-control"])[2]
+# 3. //tagname[text()='value']:  //td[text()='Learn Selenium']
+
+# 4. //tagname[contains(text(),'value')]
+# 5. //tagnme[contains(@att,'value')]
+
+# 6. //tagname[contains(text(),'value') and @att='value']
+# 7. //tagname[contains(text(),'value') or @att='value']
+        

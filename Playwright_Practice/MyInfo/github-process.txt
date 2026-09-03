@@ -1,0 +1,7 @@
+# Download and install 'Git'
+#           git --version
+# Open Github url and login to your Github Account
+# Git Initilization - Take your Username and Email id
+# Goto Command Prompt (Connection between local Git and Github Repository.)
+    # git config --global user.name "mkdash2003"
+    # git config --global user.email "mkdash2003@gmail.com"
