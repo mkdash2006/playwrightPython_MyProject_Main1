@@ -1,0 +1,7 @@
+    LLM - Large laguage Model
+    ex- chatgpt, gemini, openAi, copilot, claude
+    mcp servers: Playwright MCP Servers
+
+    1. Add extensions
+     - Install github copilot chatgpt
+     - 

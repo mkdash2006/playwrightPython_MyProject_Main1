@@ -6,8 +6,26 @@
     # git config --global user.name "mkdash2006"
     # git config --global user.email "mkdash2006@gmail.com"
 # To check config details
+# git config --global --list
+   # OR
 #   git config --global user.name
 #   git config --global user.email
 # To Remove github Account
 #   git config --global --unset user.name
 #   git config --global --unset user.email
+# one install - in the project path terminal
+   # …or create a new repository on the command line
+echo "# playwrightPython_MyProject_Main1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mkdash2006/playwrightPython_MyProject_Main1.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/mkdash2006/playwrightPython_MyProject_Main1.git
+git branch -M main
+git push -u origin main
+
+
+    
