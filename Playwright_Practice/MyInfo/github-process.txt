@@ -33,10 +33,21 @@ Once all file copied to repository
 Git Clone - copy the https url from github, then goto
 your local folder cmd and type
 git clone url
-###########
-any change ...then 
-git pull
-    
+########### CHILD BRANCH
+In Github, create a child Branch 'ex- dataHandling'. (search and add child branch name)
+Then automatically. all the code from main are copied to child branch
+---------------------------
+Tester suppose to puch code change to branch not to main
+So to get the child branch code in my local vs code, type
+   git pull    ##copy child branch to my local)
+   Then perform always the push in child branch 
+         git add .
+         git commit -m "comment"
+         git push
+   
+
 
 ######### after each code change
 git add .
+git commit -m "comment"
+git push
