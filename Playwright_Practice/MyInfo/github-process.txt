@@ -28,4 +28,15 @@ git branch -M main
 git push -u origin main
 
 
+##########
+Once all file copied to repository
+Git Clone - copy the https url from github, then goto
+your local folder cmd and type
+git clone url
+###########
+any change ...then 
+git pull
     
+
+######### after each code change
+git add .

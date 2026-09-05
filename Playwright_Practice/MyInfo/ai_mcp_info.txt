@@ -4,4 +4,24 @@
 
     1. Add extensions
      - Install github copilot chatgpt
-     - 
+    
+    2. Search Playwright mcp server in google and open github url
+    check below section
+    Standard config works in most of the tools:
+
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
+}
+
+=========
+click on install server vs code......
+  - Playwright MCP server is now installed in VS Code installed
+
+in IDE open playwright server goto setting and start server
